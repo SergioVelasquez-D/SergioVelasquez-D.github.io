@@ -18,6 +18,14 @@ body {
     padding: var(--padding-container);
 }
 
+.container2{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: var(--padding-container);
+}
+
 .hero {
     width: 100%;
     height: 100vh;
@@ -41,6 +49,31 @@ body {
     clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 100%, 0 80%);
     z-index: -1;
 }
+
+.hero__android {
+    width: 100%;
+    height: auto; /* Cambiado de 100vh a auto */
+    min-height: 0px;
+    max-height: 600px;
+    position: relative;
+    display: grid;
+    grid-template-rows: 100px 1fr;
+    overflow: hidden; /* Añadido para asegurar que el contenido no se desborde */
+}
+
+.hero__android::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; /* Cambiado de 50% a 100% */
+    background-image: linear-gradient(180deg, #2091FA 0%, #12518B 60%), url('../images/WebDesign.jpg');
+    background-size: cover;
+    z-index: -1;
+}
+
+
 
 .nav{
     --padding-container: 0;
@@ -99,9 +132,21 @@ body {
     display: grid;
     grid-auto-rows: max-content;
     align-content: center;
-    gap: 4em;
+    gap: 2em;
     padding-bottom: 100px;
     text-align: center; 
+}
+
+.hero__container__android {
+    max-width: 1000px;
+    --padding-container: 0;
+    display: grid;
+    grid-auto-rows: max-content;
+    gap: 2em;
+    padding-top: 40px; /* Ajustado según tu diseño */
+    padding-bottom: 100px; /* Ajustado según tu diseño */
+    text-align: center; 
+    margin-top: 0; /* Agregado para eliminar el espacio adicional */
 }
 
 .hero__title {
@@ -109,7 +154,8 @@ body {
 }
 
 .hero__paragraph {
-    margin-bottom: 20px;
+    
+    font-size: large;
 }
 
 .cta {
@@ -305,12 +351,22 @@ body {
     text-align: center; /* Centra el texto */
     margin-top: 1em; /* Margen superior */
     margin-bottom: 1em; /* Margen inferior */
+    font-size: 2rem;
 }
 
 .testimony__paragraph {
+    color: #000;
     text-align: center; /* Centra el texto */
     margin-top: 1em; /* Margen superior */
     margin-bottom: 1em; /* Margen inferior */
+}
+
+.testimony__paragraph2 {
+    color: #ffffff;
+    text-align: center; /* Centra el texto */
+    margin-top: 1em; /* Margen superior */
+    margin-bottom: 1em; /* Margen inferior */
+    font-size:large;
 }
 
 .testimony__container{
@@ -399,6 +455,11 @@ body {
 .testimony__arrow2 {
     width: 90%;
     cursor: pointer;
+}
+
+.testimony__img3 {
+    max-width: 1000px; /* Para asegurar que las imágenes no se desborden del contenedor */
+    max-height: 400px; /* Establece la altura máxima para las imágenes */
 }
 
 /* Questions */
