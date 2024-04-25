@@ -44,7 +44,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(180deg, #2091FA 0%, #12518B 60%), url('../images/WebDesign.jpg');
+    background-image: linear-gradient(180deg, #2091fae1 0%, #12508bdc 60%), url('../images/wall-surface-texture.jpg');
     background-size: cover;
     clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 100%, 0 80%);
     z-index: -1;
@@ -68,7 +68,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%; /* Cambiado de 50% a 100% */
-    background-image: linear-gradient(180deg, #2091FA 0%, #12518B 60%), url('../images/WebDesign.jpg');
+    background-image: linear-gradient(180deg, #2091fae1 0%, #12508bdc 60%), url('../images/wall-surface-texture.jpg');
     background-size: cover;
     z-index: -1;
 }
@@ -702,7 +702,7 @@ input[type="text"],
 
 .footer{
     
-    background-image: linear-gradient(180deg, #2091FA 10%, #12518B 90%), url('../images/WebDesign.jpg');
+    background-image: linear-gradient(180deg, #2091fae1 0%, #12508bdc 60%), url('../images/background-paint-still-life.jpg');
     padding-top: 130px;
     padding-bottom: 20px;
     clip-path: polygon(50% 10%, 100% 38%, 100% 100%, 0 100%, 0% 38%);
