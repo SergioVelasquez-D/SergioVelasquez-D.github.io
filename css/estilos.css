@@ -369,10 +369,16 @@ body {
     font-size:large;
 }
 
-.testimony__container{
+.testimony__container {
     display: grid;
-    grid-template-columns: 50px 1fr 50px;
+    
+    grid-template-columns: 1fr auto 1fr; /* Dos columnas, una para el contenido y otra para las flechas */
+    gap: 2em;
     align-items: center;
+}
+
+.testimony__content {
+    
 }
 
 .testimony__body{
@@ -396,14 +402,25 @@ body {
     max-height: 600px; /* Establece la altura máxima para las imágenes */
 }
 
+.testimony__img3 {
+    width: auto; /* Establecer el ancho máximo de la imagen al 100% del contenedor */
+    height: auto; /* Establecer la altura máxima de la imagen al 100% del contenedor */
+}
+
 
 .testimony__arrow{
     width: 90%;
     cursor: pointer;
 }
 
+.testimony__arrows {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
 
-/* Testimony */
+
+/* Testimony 2*/
 
 .testimony2 {
     text-align: center;
