@@ -479,6 +479,114 @@ body {
     max-height: 400px; /* Establece la altura máxima para las imágenes */
 }
 
+
+/* Testimony 4*/
+
+.testimony4 {
+    background-color: #0070da;
+    padding-top: 50px;
+    padding-bottom: 70px;
+}
+
+.testimony__tittle4 {
+    text-align: center; /* Centra el texto */
+    margin-top: 1em; /* Margen superior */
+    margin-bottom: 1em; /* Margen inferior */
+    font-size: 2rem;
+}
+
+.testimony__paragraph4 {
+    color: #000;
+    text-align: center; /* Centra el texto */
+    margin-top: 1em; /* Margen superior */
+    margin-bottom: 1em; /* Margen inferior */
+}
+
+.testimony__container4 {
+    display: grid;
+    
+    grid-template-columns: 5fr auto 0fr; /* Dos columnas, una para el contenido y otra para las flechas */
+    gap: 2em;
+    align-items: center;
+}
+
+.testimony__container4A {
+    display: grid;
+    
+    grid-template-columns: auto auto auto; /* Dos columnas, una para el contenido y otra para las flechas */
+    gap: 2em;
+    align-items: center;
+}
+
+.testimony__content4 {
+    
+}
+
+.testimony__body4{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    opacity: 1;
+}
+
+.testimony__body4A{
+    display: grid;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    opacity: 0;
+}
+
+.testimony__body--show4 {
+    pointer-events: unset;
+    opacity: 1;
+    transition: opacity 1.5s ease-in-out;
+}
+
+.testimony__body--show4A {
+    pointer-events: unset;
+    opacity: 1;
+    transition: opacity 1.5s ease-in-out;
+}
+
+
+.testimony__img4 {
+    max-width: 500px;
+    height: auto; /* Establecer la altura máxima de la imagen al 100% del contenedor */
+}
+
+.testimony__img4A {
+    width: 300px; /* Establecer el ancho máximo de la imagen al 100% del contenedor */
+    height: auto; /* Establecer la altura máxima de la imagen al 100% del contenedor */
+}
+
+
+
+.testimony__arrow4 {
+    width: 90%;
+    cursor: pointer;
+}
+
+.testimony__arrows4 {
+    grid-column: 3/4; /* Coloca las flechas en la tercera columna */
+    display: grid;
+    flex-direction: column;
+    display: grid;
+    align-items: center;
+    gap: 2em;
+}
+
+
+
+
+
+
+
 /* Questions */
 
 .questions{
